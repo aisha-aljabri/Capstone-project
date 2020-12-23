@@ -9,7 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 
 
-database_path = 'postgresql://postgres:Armena11@localhost:5432/capstone'
+database_path = 'postgresql://postgres:{password}@localhost:5432/{dbName}'
 db = SQLAlchemy()
 
 def setup_db(app, database_path=database_path):
